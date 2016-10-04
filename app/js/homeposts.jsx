@@ -5,7 +5,7 @@
 
             var PostStyle = {
                 height: 280
-            };
+            }
 
             var PostImageStyle = {
                 width: '100%',

@@ -16,4 +16,4 @@ module.exports = {
     single: function(req, res){
         res.render('single');
     }
-}
+};
