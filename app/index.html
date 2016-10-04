@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello React!</title>
+
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/react.min.js"></script>
+        <script src="js/vendor/react-dom.min.js"></script>
+        <script src="js/vendor/react-router.min.js"></script>
+
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron"><h1>DTFC2.0</h1></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-sm-12">
+                    <div id="hero"></div>
+                    <div id="content"></div>
+                </div>
+                <div class="col-md-4 col-sm-12" id="sidebar">
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/all.js"></script>  
+        <script>
+            ReactDOM.render(React.createElement(PageHero, { slug: 'home' }), document.getElementById('hero'));
+            ReactDOM.render(React.createElement(PostsLoader, { show: '18' }), document.getElementById('content'));
+        </script>
+        
+    </body>
+</html>

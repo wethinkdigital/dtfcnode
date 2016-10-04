@@ -1,6 +1,3 @@
-//var pageops = 
-
-
 var express = require('express');
 var app = express();
 
@@ -10,7 +7,10 @@ app.engine('jsx', require('express-react-views').createEngine());
 
 app.use('/css', express.static(__dirname + '/public'));
 
-app.get('/', require('./routes').index);
+
+// Routing
+app.get('/', require('./routes').frontpage);
+app.get('/post/:id', require('./routes').single);
 
 app.use(function(req, res, next) {
   res.status(404).send('Sorry cant find that!');

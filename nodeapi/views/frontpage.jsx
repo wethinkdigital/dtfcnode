@@ -4,15 +4,24 @@ var Header = require('./partials/header');
 var Footer = require('./partials/footer');
  
 var output = React.createClass({
+
+  getinitialState: function(){
+    return {
+      pageTitle: '',
+      pageContent: ''
+    }
+  }
+  
   render: function() {
     return (
       <html>
         <Head></Head>
-        <Header></Header>
+        <body>
+          <Header></Header>
+          Some content {this.props.data.id}
 
-        <body>Some content</body>
-
-        <Footer></Footer>
+          <Footer></Footer>
+        </body>
       </html>
     );
   }
