@@ -25,6 +25,13 @@
             <div class="row">
 
                 <div class="col-md-8 col-sm-12">
+
+
+                    <div id="newsticker">
+                    </div>
+                    <div id="newsticker2">
+                    </div>
+
                     <div id="hero"></div>
                     <div id="content"></div>
                 </div>
@@ -39,6 +46,18 @@
             ReactDOM.render(React.createElement(PageHero, { slug: 'home' }), document.getElementById('hero'));
             ReactDOM.render(React.createElement(PostsLoader, { show: '18' }), document.getElementById('content'));
         </script>
+
+                      <script>
+                            fetch('http://localhost:13370/api/newsticker')
+                            .then(function(res){
+                                return res.text()
+                            })
+                            .then(function(text){
+                                document.getElementById('newsticker').innerHTML = text;
+                            });
+                    </script>
+
+
         
     </body>
 </html>

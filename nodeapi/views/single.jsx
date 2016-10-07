@@ -25,7 +25,7 @@ var output = React.createClass({
             this.setState.postTitle = data[0].title.rendered;
             this.setState.postContent = data[0].content.rendered;
         }).catch(function( err ) {
-            throw err; 
+            //throw err; 
         });
 
     

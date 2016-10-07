@@ -17,15 +17,21 @@
   },
   "homepage": "https://github.com/wethinkdigital/dtfcnode#readme",
   "dependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-react-views": "^0.10.2",
     "node-fetch": "^1.6.3",
     "react": "^15.3.2",
     "react-addons-create-fragment": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-dom-stream": "^0.5.1",
     "wordpress-rest-api": "^0.8.0"
   },
   "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-google": "^0.6.0",
     "nodemon": "^1.10.2"
   }
 }

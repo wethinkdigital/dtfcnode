@@ -8,12 +8,17 @@ module.exports = {
             console.log(data[0]);
             res.render('frontpage', {data: data[0]});
         }).catch(function( err ) {
-            throw err; 
+            //throw err; 
         });
 
     },
 
     single: function(req, res){
         res.render('single');
+    },
+
+    sunbets: function(req,res){
+        
     }
+
 };

@@ -10,7 +10,7 @@ var output = React.createClass({
       pageTitle: '',
       pageContent: ''
     }
-  }
+  },
   
   render: function() {
     return (
