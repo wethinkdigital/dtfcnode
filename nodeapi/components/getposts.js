@@ -1,8 +1,8 @@
 var fetch = require('node-fetch');
 
-module.exports = function(){
+module.exports = function(wproot,n){
 	
-	fetch('http://dtfc/c/wp-json/wp/v2/posts?per_page=2')
+	return fetch(wproot+'posts?per_page='+n)
 	.then(function(wp){
 		return wp.json();
 	}).then(function(json){
