@@ -1,4 +1,5 @@
-var config = require('./config');
+var config = require('./config').getConfig;
+
 var wproot = config.wpapi.local;
 
 require('babel-register');
@@ -130,12 +131,6 @@ app.get('/api/newsticker/:source', function(req,res){
         });
 
     }
-});
-
-app.get('/api/testitem', function(req,res){
-
-    res.send('<h2>A headline</h2>','utf-8');
-
 });
 
 app.listen(13370);

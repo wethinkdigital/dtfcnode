@@ -65,7 +65,7 @@
 
             } else {
 
-                $.ajax({
+                jQuery.ajax({
                     url: 'https://www.dreamteamfc.com/c/wp-json/wp/v2/posts?per_page=54',
                     dataType: 'json',
                     success: function(data) {
